@@ -10,6 +10,10 @@ cc.Class({
             default: null,
             type: cc.Sprite
         },
+        fish: {
+            default:null,
+            type: cc.Sprite
+        }
     },
 
     // use this for initialization
@@ -24,6 +28,6 @@ cc.Class({
 
     // called every frame
     update: function (dt) {
-        this.player1.node.x -= 1;
+        this.fish.node.x += 1;
     },
 });

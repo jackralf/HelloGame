@@ -28,12 +28,14 @@ cc.Class({
         //     }
         // },
 
+        MAX_LENGTH:800,
         rotationAngle: 0,
         rotationDirection: 1,
         rotationSpeed: 1,
-        onFire: false,
-        fireSpeed: 1,
-        onCatch: false,
+        fireSpeed: 100,
+        pullSpeed: 100,
+        state: "IDLE",
+        catch: false,
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -47,36 +49,44 @@ cc.Class({
     },
 
     fire () {
-        this.onFire = true;
+        if(this.state == "IDLE") {
+            this.catch = false;
+            this.state = "FIRE";
+        }
     },
 
     update (dt) {
-        if(this.onCatch) {
-            this.node.x -= Math.cos(this.rotationAngle * Math.PI / 180) * this.fireSpeed;
-            this.node.y += Math.sin(this.rotationAngle * Math.PI / 180) * this.fireSpeed;
-            if(Math.abs(this.node.y) < 0.5) {
-                this.node.x = 0;
-                this.node.y = 0;
-                this.onFire = false;
-                this.onCatch = false;
+        if(this.state == "FIRE") {
+            this.node.x += Math.cos(this.rotationAngle * Math.PI / 180) * this.fireSpeed * dt;
+            this.node.y -= Math.sin(this.rotationAngle * Math.PI / 180) * this.fireSpeed * dt;
+            var length = cc.v2(this.node.x, this.node.y).mag();
+            if(length >= this.MAX_LENGTH) {
+                this.state = "PULL";
             }
-        } else if(this.onFire) {
-            this.node.x += Math.cos(this.rotationAngle * Math.PI / 180) * this.fireSpeed;
-            this.node.y -= Math.sin(this.rotationAngle * Math.PI / 180) * this.fireSpeed;
-        } else {
+        } else if(this.state == "PULL") {
+            var pullSpeed = this.pullSpeed;
+            if(this.catch) {
+                pullSpeed /= 2;
+            }
+            this.node.x -= Math.cos(this.rotationAngle * Math.PI / 180) * pullSpeed * dt;
+            this.node.y += Math.sin(this.rotationAngle * Math.PI / 180) * pullSpeed * dt;
+            if(this.node.y >= 0) {
+                this.node.setPosition(cc.v2(0, 0));
+                this.state = "IDLE";
+            }
+        } else if(this.state == "IDLE") {
             if(this.rotationAngle >= 180) {
                 this.rotationDirection = -1;
             }
             if(this.rotationAngle <= 0) {
                 this.rotationDirection = 1;
             }
-            this.rotationAngle += this.rotationDirection * this.rotationSpeed;
+            this.rotationAngle += this.rotationDirection * this.rotationSpeed * dt;
             this.node.rotation = this.rotationAngle;
         }
     },
 
     onCollisionEnter: function (other, self) {
-        console.log('on collision enter1');
-        this.onCatch = true;
+       
     },
 });

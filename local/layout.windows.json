@@ -100,43 +100,19 @@
         "timeline"
       ]
     },
-    "window-1521529896196": {
-      "main": false,
-      "url": "unpack://static/window.html",
-      "windowType": "dockable",
-      "x": 419,
-      "y": 177,
-      "width": 600,
-      "height": 565,
-      "layout": {
-        "children": [
-          {
-            "active": 0,
-            "children": [
-              "project-settings"
-            ],
-            "height": 526,
-            "type": "panel",
-            "width": 584
-          }
-        ],
-        "type": "dock-v"
-      },
-      "panels": [
-        "project-settings"
-      ]
-    }
+    "window-1521624444382": {},
+    "worker": {}
   },
   "panels": {
     "builder": {
-      "x": 201,
-      "y": 64,
+      "x": 474,
+      "y": 94,
       "width": 500,
       "height": 722
     },
     "project-settings": {
-      "x": 419,
-      "y": 177,
+      "x": 449,
+      "y": 184,
       "width": 600,
       "height": 565
     },

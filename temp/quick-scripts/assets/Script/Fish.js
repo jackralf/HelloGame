@@ -34,14 +34,16 @@ cc.Class({
         //     }
         // },
         onCatched: false,
-        hook: {
+        hookNode: {
             default: null,
             type: cc.Node
         },
         delta: {
             default: null,
             type: cc.Vec2
-        }
+        },
+        direction: 1,
+        speed: 100
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -49,23 +51,37 @@ cc.Class({
     onLoad: function onLoad() {},
     start: function start() {},
     update: function update(dt) {
-        if (this.hook && this.delta && this.onCatched) {
-            var worldPos = this.hook.parent.convertToWorldSpace(this.hook.position);
+        if (this.hookNode && this.delta && this.onCatched) {
+            var worldPos = this.hookNode.parent.convertToWorldSpace(this.hookNode.position);
             this.node.setPosition(this.node.parent.convertToNodeSpace(worldPos).add(this.delta));
+            var hook = this.hookNode.getComponent("Hook");
+            if (hook.state == "IDLE") {
+                this.node.destroy();
+            }
         } else {
-            this.node.x += 1;
+            this.node.x += this.speed * this.direction * dt;
+            if (this.node.x >= 700 || this.node.x <= -700) {
+                this.direction = -this.direction;
+            }
         }
     },
 
 
     onCollisionEnter: function onCollisionEnter(other, self) {
         console.log('on collision enter2');
-        this.onCatched = true;
-        this.hook = other.node;
-        this.node.color = cc.Color.RED;
-        var worldPos = this.hook.parent.convertToWorldSpace(this.hook.position);
-        this.delta = this.node.position.sub(this.node.parent.convertToNodeSpace(worldPos));
-        cc.log("Node Position: " + this.delta);
+        var hook = other.getComponent("Hook");
+        console.log("state:" + hook.state);
+        if (hook.state == "FIRE") {
+            hook.catch = true;
+            hook.state = "PULL";
+
+            this.onCatched = true;
+            this.hookNode = other.node;
+            this.node.color = cc.Color.RED;
+            var worldPos = this.hookNode.parent.convertToWorldSpace(this.hookNode.position);
+            this.delta = this.node.position.sub(this.node.parent.convertToNodeSpace(worldPos));
+            cc.log("Node Position: " + this.delta);
+        }
     }
 });
 

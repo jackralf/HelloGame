@@ -235,8 +235,8 @@
     "relativePath": "Script"
   },
   "2d2f792f-a40c-49bb-a189-ed176a246e49": {
-    "asset": 1521546686265,
-    "meta": 1521546686289,
+    "asset": 1521624459805,
+    "meta": 1521624459834,
     "relativePath": "Scene\\helloworld.fire"
   },
   "7b81d4e8-ec84-4716-968d-500ac1d78a54": {
@@ -274,19 +274,29 @@
     "meta": 1521543134057,
     "relativePath": "Script\\Player.js"
   },
+  "97514dda-2978-4db1-b204-ed2deade1945": {
+    "asset": 1521623538486,
+    "meta": 1521623538499,
+    "relativePath": "fish.prefab"
+  },
+  "405ecacb-dde7-4b88-b2fd-38bfc5e0f24a": {
+    "asset": 1521622810213,
+    "meta": 1521622812142,
+    "relativePath": "Script\\Config.js"
+  },
+  "5b6f5522-60bb-42e8-ade9-ca2138026b1b": {
+    "asset": 1521623258762,
+    "meta": 1521623275639,
+    "relativePath": "Script\\Fish.js"
+  },
   "280c3aec-6492-4a9d-9f51-a9b00b570b4a": {
-    "asset": 1521543223586,
-    "meta": 1521543224738,
+    "asset": 1521623995959,
+    "meta": 1521623998355,
     "relativePath": "Script\\HelloWorld.js"
   },
   "23657e5c-9a11-4baa-bf38-58f744d3ccfb": {
-    "asset": 1521545119078,
-    "meta": 1521545119854,
+    "asset": 1521624420493,
+    "meta": 1521624422967,
     "relativePath": "Script\\Hook.js"
-  },
-  "5b6f5522-60bb-42e8-ade9-ca2138026b1b": {
-    "asset": 1521546538277,
-    "meta": 1521546539620,
-    "relativePath": "Script\\Fish.js"
   }
 }

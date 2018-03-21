@@ -432,3 +432,306 @@
 2018-03-20T11:46:31.071Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
 2018-03-20T11:47:46.463Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
 2018-03-20T11:48:59.863Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T01:57:55.457Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T02:03:00.970Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T02:03:38.904Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T02:04:57.244Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T02:07:17.227Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T07:46:27.374Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T07:51:30.002Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T07:58:15.974Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T07:59:38.325Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T08:10:56.586Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T08:11:46.316Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T08:11:50.841Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T08:11:53.686Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T08:12:04.100Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T08:25:52.408Z - failed: load script [C:\Users\admin\Documents\HelloGame\temp\quick-scripts\assets\Script\Config.js] failed : ReferenceError: fishes is not defined
+    at __define (C:\Users\admin\Documents\HelloGame\temp\quick-scripts\assets\Script\Config.js:7:8)
+    at C:\Users\admin\Documents\HelloGame\temp\quick-scripts\assets\Script\Config.js:12:13
+    at Object.<anonymous> (C:\Users\admin\Documents\HelloGame\temp\quick-scripts\assets\Script\Config.js:19:11)
+    at Object.<anonymous> (C:\Users\admin\Documents\HelloGame\temp\quick-scripts\assets\Script\Config.js:22:3)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+2018-03-21T08:25:52.409Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T08:26:53.073Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T08:27:19.106Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T08:30:08.765Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T08:32:54.993Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T08:36:43.946Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T08:38:03.396Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T08:39:17.430Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T08:40:02.094Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T08:50:49.464Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T08:57:11.921Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T08:57:36.933Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T08:57:54.273Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T08:58:22.570Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T09:00:12.426Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T09:03:08.851Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T09:07:55.940Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T09:08:45.144Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T09:15:19.309Z - error: scene 没有保存，请先保存相关信息再进行构建。
+    at Editor.Ipc.sendToPanel (C:\CocosCreator\resources\app.asar\editor\builtin\builder\panel\builder.js:1:14935)
+    at EventEmitter.ipcRenderer.on.n (C:\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4493)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2018-03-21T09:16:30.734Z - error: scene 没有保存，请先保存相关信息再进行构建。
+    at Editor.Ipc.sendToPanel (C:\CocosCreator\resources\app.asar\editor\builtin\builder\panel\builder.js:1:14935)
+    at EventEmitter.ipcRenderer.on.n (C:\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4493)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2018-03-21T09:16:47.350Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "C:\\Users\\admin\\Documents\\HelloGame\\build",
+  "debug": false,
+  "dest": "C:\\Users\\admin\\Documents\\HelloGame\\build\\web-mobile",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "platform": "web-mobile",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "orientation": "portrait"
+  },
+  "renderMode": "0",
+  "scenes": [
+    "2d2f792f-a40c-49bb-a189-ed176a246e49"
+  ],
+  "sourceMaps": false,
+  "startScene": "2d2f792f-a40c-49bb-a189-ed176a246e49",
+  "template": "link",
+  "title": "hello_world",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "landscape",
+  "wechatgame": {
+    "appid": "wx6ac3f5090a6b99c5",
+    "orientation": "portrait"
+  },
+  "xxteaKey": "6b2e46e4-17e1-46",
+  "zipCompressJs": true,
+  "project": "C:\\Users\\admin\\Documents\\HelloGame",
+  "projectName": "hello_world",
+  "debugBuildWorker": false
+}
+2018-03-21T09:16:47.351Z - normal: Building C:\Users\admin\Documents\HelloGame
+2018-03-21T09:16:47.351Z - normal: Destination C:\Users\admin\Documents\HelloGame\build\web-mobile
+2018-03-21T09:16:47.971Z - normal: Delete C:\Users\admin\Documents\HelloGame\build\web-mobile\**\*
+2018-03-21T09:17:11.314Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:1106675
+2018-03-21T09:17:43.362Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:1106687
+2018-03-21T09:17:43.364Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:1106689
+2018-03-21T09:17:43.364Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:1106691
+2018-03-21T09:17:43.364Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:1106694
+2018-03-21T09:17:49.423Z - normal: Compiled project javascript file successfully
+2018-03-21T09:17:49.424Z - error: Build Failed: Compile error: Cannot require 'Config.js', module not found, please remove file extension and retry. ( just "require('Config');"
+    at Readable.<anonymous> (C:\CocosCreator\resources\app.asar\editor\page\compile-worker.js:1:1514)
+    at emitOne (events.js:96:13)
+    at Readable.emit (events.js:191:7)
+    at Labeled.<anonymous> (C:\CocosCreator\resources\app.asar\node_modules\read-only-stream\index.js:28:44)
+    at emitOne (events.js:96:13)
+    at Labeled.emit (events.js:191:7)
+    at Labeled.<anonymous> (C:\CocosCreator\resources\app.asar\node_modules\stream-splicer\index.js:130:18)
+    at emitOne (events.js:96:13)
+    at Labeled.emit (events.js:191:7)
+    at Deps.<anonymous> (C:\CocosCreator\resources\app.asar\node_modules\stream-splicer\index.js:130:18)
+    at Async.series.t (C:\CocosCreator\resources\app.asar\editor\core\builder.js:1:3024)
+    at C:\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:726:13
+    at C:\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:52:16
+    at C:\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:264:21
+    at C:\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:44:16
+    at C:\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:723:17
+    at C:\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:167:37
+    at Gulp.doneCallback (C:\CocosCreator\resources\app.asar\editor\core\gulp-build.js:1:18343)
+    at Gulp.Orchestrator.stop (C:\CocosCreator\resources\app.asar\node_modules\orchestrator\index.js:150:9)
+2018-03-21T09:19:58.673Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T09:19:59.426Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "C:\\Users\\admin\\Documents\\HelloGame\\build",
+  "debug": false,
+  "dest": "C:\\Users\\admin\\Documents\\HelloGame\\build\\web-mobile",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "platform": "web-mobile",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "orientation": "portrait"
+  },
+  "renderMode": "0",
+  "scenes": [
+    "2d2f792f-a40c-49bb-a189-ed176a246e49"
+  ],
+  "sourceMaps": false,
+  "startScene": "2d2f792f-a40c-49bb-a189-ed176a246e49",
+  "template": "link",
+  "title": "hello_world",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "landscape",
+  "wechatgame": {
+    "appid": "wx6ac3f5090a6b99c5",
+    "orientation": "portrait"
+  },
+  "xxteaKey": "6b2e46e4-17e1-46",
+  "zipCompressJs": true,
+  "project": "C:\\Users\\admin\\Documents\\HelloGame",
+  "projectName": "hello_world",
+  "debugBuildWorker": false
+}
+2018-03-21T09:19:59.427Z - normal: Building C:\Users\admin\Documents\HelloGame
+2018-03-21T09:19:59.427Z - normal: Destination C:\Users\admin\Documents\HelloGame\build\web-mobile
+2018-03-21T09:19:59.428Z - normal: Delete C:\Users\admin\Documents\HelloGame\build\web-mobile\**\*
+2018-03-21T09:20:01.288Z - normal: Compiled project javascript file successfully
+2018-03-21T09:20:01.288Z - normal: Start building assets
+2018-03-21T09:20:01.288Z - normal: Start spawn build-worker
+2018-03-21T09:20:02.046Z - normal: Finish spawn build-worker
+2018-03-21T09:20:02.046Z - normal: Start init build-worker
+2018-03-21T09:20:04.117Z - normal: 1.9.0
+2018-03-21T09:20:04.235Z - normal: Finish init build-worker
+2018-03-21T09:20:04.235Z - normal: Start build-assets in worker
+2018-03-21T09:20:05.568Z - normal: Finish build-assets in worker
+2018-03-21T09:20:05.579Z - normal: Finish building assets
+2018-03-21T09:20:05.604Z - normal: Start building raw assets
+2018-03-21T09:20:05.605Z - normal: Start building plugin scripts
+2018-03-21T09:20:05.647Z - normal: Finish building raw assets
+2018-03-21T09:20:05.695Z - normal: Generating main.js from C:\CocosCreator\resources\static\build-templates\shares\main.js
+2018-03-21T09:20:05.733Z - normal: Generating html from C:\CocosCreator\resources\static\build-templates\web-mobile\template\index.html
+2018-03-21T09:20:05.745Z - normal: Built to "C:\Users\admin\Documents\HelloGame\build\web-mobile" successfully
+2018-03-21T09:22:32.978Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T09:26:40.869Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T09:27:03.197Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T09:27:29.591Z - error: scene 没有保存，请先保存相关信息再进行构建。
+    at Editor.Ipc.sendToPanel (C:\CocosCreator\resources\app.asar\editor\builtin\builder\panel\builder.js:1:14935)
+    at EventEmitter.ipcRenderer.on.n (C:\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4493)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2018-03-21T09:27:41.834Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "C:\\Users\\admin\\Documents\\HelloGame\\build",
+  "debug": false,
+  "dest": "C:\\Users\\admin\\Documents\\HelloGame\\build\\web-mobile",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "platform": "web-mobile",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "orientation": "portrait"
+  },
+  "renderMode": "0",
+  "scenes": [
+    "2d2f792f-a40c-49bb-a189-ed176a246e49"
+  ],
+  "sourceMaps": false,
+  "startScene": "2d2f792f-a40c-49bb-a189-ed176a246e49",
+  "template": "link",
+  "title": "hello_world",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "landscape",
+  "wechatgame": {
+    "appid": "wx6ac3f5090a6b99c5",
+    "orientation": "portrait"
+  },
+  "xxteaKey": "6b2e46e4-17e1-46",
+  "zipCompressJs": true,
+  "project": "C:\\Users\\admin\\Documents\\HelloGame",
+  "projectName": "hello_world",
+  "debugBuildWorker": false
+}
+2018-03-21T09:27:41.835Z - normal: Building C:\Users\admin\Documents\HelloGame
+2018-03-21T09:27:41.835Z - normal: Destination C:\Users\admin\Documents\HelloGame\build\web-mobile
+2018-03-21T09:27:41.837Z - normal: Delete C:\Users\admin\Documents\HelloGame\build\web-mobile\**\*
+2018-03-21T09:27:44.131Z - normal: Compiled project javascript file successfully
+2018-03-21T09:27:44.131Z - normal: Start building assets
+2018-03-21T09:27:44.131Z - normal: Start spawn build-worker
+2018-03-21T09:27:44.920Z - normal: Finish spawn build-worker
+2018-03-21T09:27:44.920Z - normal: Start init build-worker
+2018-03-21T09:27:47.325Z - normal: 1.9.0
+2018-03-21T09:27:47.399Z - normal: Finish init build-worker
+2018-03-21T09:27:47.399Z - normal: Start build-assets in worker
+2018-03-21T09:27:47.678Z - normal: Finish build-assets in worker
+2018-03-21T09:27:47.691Z - normal: Finish building assets
+2018-03-21T09:27:47.706Z - normal: Start building raw assets
+2018-03-21T09:27:47.707Z - normal: Start building plugin scripts
+2018-03-21T09:27:47.751Z - normal: Finish building raw assets
+2018-03-21T09:27:47.758Z - normal: Generating main.js from C:\CocosCreator\resources\static\build-templates\shares\main.js
+2018-03-21T09:27:47.763Z - normal: Generating html from C:\CocosCreator\resources\static\build-templates\web-mobile\template\index.html
+2018-03-21T09:27:47.806Z - normal: Built to "C:\Users\admin\Documents\HelloGame\build\web-mobile" successfully

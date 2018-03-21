@@ -76,10 +76,10 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 27
+        "__id__": 25
       },
       {
-        "__id__": 28
+        "__id__": 26
       }
     ],
     "_prefab": null,
@@ -393,12 +393,14 @@
       "__id__": 7
     },
     "_enabled": true,
+    "MAX_LENGTH": 800,
     "rotationAngle": 0,
     "rotationDirection": 1,
-    "rotationSpeed": 1,
-    "onFire": false,
-    "fireSpeed": 5,
-    "onCatch": false
+    "rotationSpeed": 100,
+    "fireSpeed": 500,
+    "pullSpeed": 500,
+    "state": "IDLE",
+    "catch": false
   },
   {
     "__type__": "cc.Sprite",
@@ -547,7 +549,7 @@
     "_localZOrder": 0,
     "_globalZOrder": 0,
     "_opacityModifyRGB": false,
-    "groupIndex": 0
+    "groupIndex": 1
   },
   {
     "__type__": "cc.Sprite",
@@ -583,12 +585,14 @@
       "__id__": 14
     },
     "_enabled": true,
+    "MAX_LENGTH": 500,
     "rotationAngle": 0,
     "rotationDirection": 1,
-    "rotationSpeed": 1,
-    "onFire": false,
-    "fireSpeed": 1,
-    "onCatch": false
+    "rotationSpeed": 100,
+    "fireSpeed": 500,
+    "pullSpeed": 500,
+    "state": "IDLE",
+    "catch": false
   },
   {
     "__type__": "cc.Sprite",
@@ -627,7 +631,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "fish",
+    "_name": "fire",
     "_objFlags": 0,
     "_parent": {
       "__id__": 2
@@ -641,118 +645,6 @@
       },
       {
         "__id__": 21
-      },
-      {
-        "__id__": 22
-      }
-    ],
-    "_prefab": null,
-    "_id": "b3qMIfy2xN35nYpFRwd3y1",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 195,
-      "height": 270
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 0.3,
-    "_scaleY": 0.3,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": -370,
-      "y": -58
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 1
-  },
-  {
-    "__type__": "cc.Sprite",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 19
-    },
-    "_enabled": true,
-    "_spriteFrame": {
-      "__uuid__": "31bc895a-c003-4566-a9f3-2e54ae1c17dc"
-    },
-    "_type": 0,
-    "_sizeMode": 1,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_atlas": null
-  },
-  {
-    "__type__": "5b6f5UiYLtC6K3pyiE4Amsb",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 19
-    },
-    "_enabled": true,
-    "onCatched": false,
-    "hook": null,
-    "delta": null
-  },
-  {
-    "__type__": "cc.CircleCollider",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 19
-    },
-    "_enabled": true,
-    "tag": 0,
-    "_offset": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_radius": 135
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "fire",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 2
-    },
-    "_children": [],
-    "_tag": -1,
-    "_active": true,
-    "_components": [
-      {
-        "__id__": 24
-      },
-      {
-        "__id__": 25
       }
     ],
     "_prefab": null,
@@ -797,7 +689,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 23
+      "__id__": 19
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -823,7 +715,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 23
+      "__id__": 19
     },
     "_enabled": true,
     "transition": 3,
@@ -845,7 +737,7 @@
     "zoomScale": 0.95,
     "clickEvents": [
       {
-        "__id__": 26
+        "__id__": 22
       }
     ],
     "_N$interactable": true,
@@ -883,7 +775,7 @@
       "__uuid__": "29158224-f8dd-4661-a796-1ffab537140e"
     },
     "_N$target": {
-      "__id__": 23
+      "__id__": 19
     }
   },
   {
@@ -894,6 +786,39 @@
     "component": "HelloWorld",
     "handler": "callback",
     "customEventData": ""
+  },
+  {
+    "__type__": "cc.Node",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 2
+    },
+    "_id": "82dk8jz2JAN7zKWUlIqEmw",
+    "_prefab": {
+      "__id__": 24
+    },
+    "_name": "fish",
+    "_active": true,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": -850,
+      "y": -378
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0
+  },
+  {
+    "__type__": "cc.PrefabInfo",
+    "root": {
+      "__id__": 23
+    },
+    "asset": {
+      "__uuid__": "97514dda-2978-4db1-b204-ed2deade1945"
+    },
+    "fileId": "b3qMIfy2xN35nYpFRwd3y1",
+    "sync": true
   },
   {
     "__type__": "cc.Canvas",
@@ -919,6 +844,9 @@
       "__id__": 2
     },
     "_enabled": true,
+    "t_prefab": {
+      "__uuid__": "97514dda-2978-4db1-b204-ed2deade1945"
+    },
     "hook": {
       "__id__": 7
     }

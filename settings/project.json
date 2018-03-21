@@ -12,7 +12,13 @@
     ],
     [
       false,
+      false,
       true
+    ],
+    [
+      false,
+      true,
+      false
     ]
   ],
   "design-resolution-height": 640,
@@ -22,7 +28,8 @@
   "fit-width": false,
   "group-list": [
     "default",
-    "collider"
+    "hook",
+    "fish"
   ],
   "simulator-orientation": false,
   "simulator-resolution": {

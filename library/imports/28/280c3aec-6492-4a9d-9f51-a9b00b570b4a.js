@@ -34,7 +34,11 @@ cc.Class({
             default: null,
             type: cc.Label
         },
-        pos: 0
+        pos: 0,
+        logicDelta: 0.1,
+        ticks: 0,
+        fishArr: [],
+        operation: []
     },
 
     // use this for initialization
@@ -58,6 +62,7 @@ cc.Class({
             js.direction = config.direction;
             js.speed = config.speed;
             fish.setPosition(config.x, config.y);
+            this.fishArr.push(fish);
         }
     },
 
@@ -87,7 +92,27 @@ cc.Class({
     },
 
     // called every frame
-    update: function update(dt) {},
+    update: function update(dt) {
+        this.tick();
+    },
+
+    tick: function tick() {
+
+        for (var i = 0; i < this.fishArr.length; i++) {
+            var fish = fishArr[i];
+            if (cc.isValid(fish)) {
+                var js = fish.getComponent("Fish");
+                js.tick(this.logicDelta);
+            }
+        }
+
+        var jsHook1 = this.hook1.getComponent("Hook");
+        var jsHook2 = this.hook2.getComponent("Hook");
+        jsHook1.tick(this.logicDelta);
+        jsHook2.tick(this.logicDelta);
+
+        this.ticks += 1;
+    },
 
     callback: function callback(event, customEventData) {
         console.log("fire ....");

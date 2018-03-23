@@ -50,7 +50,10 @@ cc.Class({
 
     onLoad: function onLoad() {},
     start: function start() {},
-    update: function update(dt) {
+    update: function update(dt) {},
+
+
+    tick: function tick(dt) {
         if (this.hookNode && this.delta && this.onCatched) {
             var worldPos = this.hookNode.parent.convertToWorldSpace(this.hookNode.position);
             this.node.setPosition(this.node.parent.convertToNodeSpace(worldPos).add(this.delta));
@@ -65,7 +68,6 @@ cc.Class({
             }
         }
     },
-
 
     onCollisionEnter: function onCollisionEnter(other, self) {
         console.log('on collision enter2');

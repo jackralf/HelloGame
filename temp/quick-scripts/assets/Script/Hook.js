@@ -54,7 +54,10 @@ cc.Class({
             this.state = "FIRE";
         }
     },
-    update: function update(dt) {
+    update: function update(dt) {},
+
+
+    tick: function tick(dt) {
         if (this.state == "FIRE") {
             this.node.x += Math.cos(this.rotationAngle * Math.PI / 180) * this.fireSpeed * dt;
             this.node.y -= Math.sin(this.rotationAngle * Math.PI / 180) * this.fireSpeed * dt;
@@ -84,7 +87,6 @@ cc.Class({
             this.node.rotation = this.rotationAngle;
         }
     },
-
 
     onCollisionEnter: function onCollisionEnter(other, self) {}
 });

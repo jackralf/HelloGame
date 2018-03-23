@@ -1125,3 +1125,4 @@ Class ID: "d0660HWtshLJIhhZD7X1J1j"
 2018-03-22T12:04:51.573Z - normal: Generating main.js from C:\CocosCreator\resources\static\build-templates\shares\main.js
 2018-03-22T12:04:51.576Z - normal: Generating html from C:\CocosCreator\resources\static\build-templates\web-mobile\template\index.html
 2018-03-22T12:04:51.621Z - normal: Built to "C:\Users\admin\Documents\HelloGame\build\web-mobile" successfully
+2018-03-23T10:57:46.900Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2

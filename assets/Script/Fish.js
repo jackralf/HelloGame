@@ -51,6 +51,10 @@ cc.Class({
     },
 
     update (dt) {
+        
+    },
+
+    tick: function(dt) {
         if(this.hookNode &&  this.delta && this.onCatched) {
             var worldPos = this.hookNode.parent.convertToWorldSpace(this.hookNode.position);
             this.node.setPosition(this.node.parent.convertToNodeSpace(worldPos).add(this.delta));
@@ -73,7 +77,7 @@ cc.Class({
         if(hook.state == "FIRE") {
             hook.catch = true;
             hook.state = "PULL";
-            
+
             this.onCatched = true;
             this.hookNode = other.node;
             this.node.color = cc.Color.RED;

@@ -735,3 +735,393 @@
 2018-03-21T09:27:47.758Z - normal: Generating main.js from C:\CocosCreator\resources\static\build-templates\shares\main.js
 2018-03-21T09:27:47.763Z - normal: Generating html from C:\CocosCreator\resources\static\build-templates\web-mobile\template\index.html
 2018-03-21T09:27:47.806Z - normal: Built to "C:\Users\admin\Documents\HelloGame\build\web-mobile" successfully
+2018-03-21T09:35:01.381Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T09:35:21.509Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T09:35:40.355Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T09:41:17.376Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T09:42:46.834Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T09:43:09.678Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T09:45:18.075Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T09:47:01.815Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-21T11:31:38.875Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T02:37:38.205Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T02:43:22.255Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T02:44:49.624Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T02:47:06.466Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T02:50:24.242Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T03:06:37.352Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T03:09:40.699Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T03:11:54.026Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T03:11:57.034Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T03:22:16.411Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T03:24:08.322Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T03:25:39.942Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T03:26:31.819Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T03:28:13.957Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T03:29:56.543Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T03:51:56.998Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T03:53:40.676Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T03:53:55.041Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T03:54:25.581Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T03:56:50.950Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T03:58:12.476Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T04:03:46.828Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T04:04:40.067Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T06:12:32.539Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T06:12:42.629Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T06:14:10.002Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T06:14:21.559Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T06:47:15.530Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T06:47:24.413Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T06:51:30.995Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T06:59:26.711Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T07:17:54.721Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T07:17:54.753Z - error: Can not declare Network.isConnected method, it is already defined in the properties of Network.
+    at Object.errorID (C:\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at Object.exports.doValidateMethodWithProps_DEV (C:\CocosCreator\resources\engine\cocos2d\core\platform\preprocess-class.js:272:16)
+    at Object.exports.validateMethodWithProps (C:\CocosCreator\resources\engine\cocos2d\core\platform\preprocess-class.js:291:18)
+    at Object.CCClass [as Class] (C:\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:968:25)
+    at __define (C:\Users\admin\Documents\HelloGame\temp\quick-scripts\assets\Script\Network.js:7:4)
+    at C:\Users\admin\Documents\HelloGame\temp\quick-scripts\assets\Script\Network.js:53:13
+    at Object.<anonymous> (C:\Users\admin\Documents\HelloGame\temp\quick-scripts\assets\Script\Network.js:60:11)
+    at Object.<anonymous> (C:\Users\admin\Documents\HelloGame\temp\quick-scripts\assets\Script\Network.js:63:3)
+    at Module._compile (module.js:571:32)
+2018-03-22T07:18:02.463Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T07:18:02.465Z - error: Can not declare Network.isConnected method, it is already defined in the properties of Network.
+    at Object.errorID (C:\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at Object.exports.doValidateMethodWithProps_DEV (C:\CocosCreator\resources\engine\cocos2d\core\platform\preprocess-class.js:272:16)
+    at Object.exports.validateMethodWithProps (C:\CocosCreator\resources\engine\cocos2d\core\platform\preprocess-class.js:291:18)
+    at Object.CCClass [as Class] (C:\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:968:25)
+    at __define (C:\Users\admin\Documents\HelloGame\temp\quick-scripts\assets\Script\Network.js:7:4)
+    at C:\Users\admin\Documents\HelloGame\temp\quick-scripts\assets\Script\Network.js:53:13
+    at Object.<anonymous> (C:\Users\admin\Documents\HelloGame\temp\quick-scripts\assets\Script\Network.js:60:11)
+    at Object.<anonymous> (C:\Users\admin\Documents\HelloGame\temp\quick-scripts\assets\Script\Network.js:63:3)
+    at Module._compile (module.js:571:32)
+2018-03-22T07:23:35.637Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T07:23:35.640Z - error: Can not declare Network.isConnected method, it is already defined in the properties of Network.
+    at Object.errorID (C:\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at Object.exports.doValidateMethodWithProps_DEV (C:\CocosCreator\resources\engine\cocos2d\core\platform\preprocess-class.js:272:16)
+    at Object.exports.validateMethodWithProps (C:\CocosCreator\resources\engine\cocos2d\core\platform\preprocess-class.js:291:18)
+    at Object.CCClass [as Class] (C:\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:968:25)
+    at __define (C:\Users\admin\Documents\HelloGame\temp\quick-scripts\assets\Script\Network.js:7:4)
+    at C:\Users\admin\Documents\HelloGame\temp\quick-scripts\assets\Script\Network.js:55:13
+    at Object.<anonymous> (C:\Users\admin\Documents\HelloGame\temp\quick-scripts\assets\Script\Network.js:62:11)
+    at Object.<anonymous> (C:\Users\admin\Documents\HelloGame\temp\quick-scripts\assets\Script\Network.js:65:3)
+    at Module._compile (module.js:571:32)
+2018-03-22T07:23:43.320Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T07:23:43.323Z - error: Can not declare Network.isConnected method, it is already defined in the properties of Network.
+    at Object.errorID (C:\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at Object.exports.doValidateMethodWithProps_DEV (C:\CocosCreator\resources\engine\cocos2d\core\platform\preprocess-class.js:272:16)
+    at Object.exports.validateMethodWithProps (C:\CocosCreator\resources\engine\cocos2d\core\platform\preprocess-class.js:291:18)
+    at Object.CCClass [as Class] (C:\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:968:25)
+    at __define (C:\Users\admin\Documents\HelloGame\temp\quick-scripts\assets\Script\Network.js:7:4)
+    at C:\Users\admin\Documents\HelloGame\temp\quick-scripts\assets\Script\Network.js:55:13
+    at Object.<anonymous> (C:\Users\admin\Documents\HelloGame\temp\quick-scripts\assets\Script\Network.js:62:11)
+    at Object.<anonymous> (C:\Users\admin\Documents\HelloGame\temp\quick-scripts\assets\Script\Network.js:65:3)
+    at Module._compile (module.js:571:32)
+2018-03-22T07:28:32.686Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T07:28:32.688Z - error: Can not declare Network.isConnected method, it is already defined in the properties of Network.
+    at Object.errorID (C:\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at Object.exports.doValidateMethodWithProps_DEV (C:\CocosCreator\resources\engine\cocos2d\core\platform\preprocess-class.js:272:16)
+    at Object.exports.validateMethodWithProps (C:\CocosCreator\resources\engine\cocos2d\core\platform\preprocess-class.js:291:18)
+    at Object.CCClass [as Class] (C:\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:968:25)
+    at __define (C:\Users\admin\Documents\HelloGame\temp\quick-scripts\assets\Script\Network.js:7:4)
+    at C:\Users\admin\Documents\HelloGame\temp\quick-scripts\assets\Script\Network.js:57:13
+    at Object.<anonymous> (C:\Users\admin\Documents\HelloGame\temp\quick-scripts\assets\Script\Network.js:64:11)
+    at Object.<anonymous> (C:\Users\admin\Documents\HelloGame\temp\quick-scripts\assets\Script\Network.js:67:3)
+    at Module._compile (module.js:571:32)
+2018-03-22T07:29:42.307Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T07:30:51.281Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T07:32:13.974Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T07:34:43.283Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T07:35:17.315Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T07:36:13.793Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T07:36:27.330Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T07:37:32.192Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T07:42:07.327Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T07:42:30.311Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T07:42:47.214Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T07:50:49.856Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T07:52:15.764Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T07:53:41.267Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T07:58:10.213Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T09:38:07.171Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T11:21:43.081Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T11:24:56.161Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T11:25:27.049Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T11:34:54.823Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T11:37:57.313Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T11:39:12.688Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T11:39:55.886Z - warn: Script attached to "Canvas" in scene "login.fire" is missing or invalid. Detailed information:
+Node path: "Canvas"
+Asset url: "db://assets/Scene/login.fire"
+Script UUID: "d06601d6-b6c8-4b24-8861-643ed7d49d63"
+Class ID: "d0660HWtshLJIhhZD7X1J1j"
+
+2018-03-22T11:45:34.211Z - warn: Script attached to "Canvas" in scene "login.fire" is missing or invalid. Detailed information:
+Node path: "Canvas"
+Asset url: "db://assets/Scene/login.fire"
+Script UUID: "d06601d6-b6c8-4b24-8861-643ed7d49d63"
+Class ID: "d0660HWtshLJIhhZD7X1J1j"
+
+2018-03-22T11:46:13.363Z - warn: Script attached to "Canvas" in scene "login.fire" is missing or invalid. Detailed information:
+Node path: "Canvas"
+Asset url: "db://assets/Scene/login.fire"
+Script UUID: "d06601d6-b6c8-4b24-8861-643ed7d49d63"
+Class ID: "d0660HWtshLJIhhZD7X1J1j"
+
+2018-03-22T11:56:30.073Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T11:59:35.067Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T12:03:11.825Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "C:\\Users\\admin\\Documents\\HelloGame\\build",
+  "debug": false,
+  "dest": "C:\\Users\\admin\\Documents\\HelloGame\\build\\web-mobile",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "platform": "web-mobile",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "orientation": "portrait"
+  },
+  "renderMode": "0",
+  "scenes": [
+    "2d2f792f-a40c-49bb-a189-ed176a246e49",
+    "b0087c3b-efe4-44d4-acce-1b931c481981"
+  ],
+  "sourceMaps": false,
+  "startScene": "2d2f792f-a40c-49bb-a189-ed176a246e49",
+  "template": "link",
+  "title": "hello_world",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "landscape",
+  "wechatgame": {
+    "appid": "wx6ac3f5090a6b99c5",
+    "orientation": "portrait"
+  },
+  "xxteaKey": "6b2e46e4-17e1-46",
+  "zipCompressJs": true,
+  "project": "C:\\Users\\admin\\Documents\\HelloGame",
+  "projectName": "hello_world",
+  "debugBuildWorker": false
+}
+2018-03-22T12:03:11.827Z - normal: Building C:\Users\admin\Documents\HelloGame
+2018-03-22T12:03:11.827Z - normal: Destination C:\Users\admin\Documents\HelloGame\build\web-mobile
+2018-03-22T12:03:11.828Z - normal: Delete C:\Users\admin\Documents\HelloGame\build\web-mobile\**\*
+2018-03-22T12:03:17.704Z - normal: Compiled project javascript file successfully
+2018-03-22T12:03:17.704Z - normal: Start building assets
+2018-03-22T12:03:17.704Z - normal: Start spawn build-worker
+2018-03-22T12:03:18.514Z - normal: Finish spawn build-worker
+2018-03-22T12:03:18.514Z - normal: Start init build-worker
+2018-03-22T12:03:20.731Z - normal: 1.9.0
+2018-03-22T12:03:20.873Z - normal: Finish init build-worker
+2018-03-22T12:03:20.873Z - normal: Start build-assets in worker
+2018-03-22T12:03:22.257Z - warn: Script attached to "Canvas" in scene "login.fire" is missing or invalid. Detailed information:
+Node path: "Canvas"
+Asset url: "db://assets/Scene/login.fire"
+Script UUID: "d06601d6-b6c8-4b24-8861-643ed7d49d63"
+Class ID: "d0660HWtshLJIhhZD7X1J1j"
+
+2018-03-22T12:03:22.478Z - normal: Finish build-assets in worker
+2018-03-22T12:03:22.492Z - normal: Finish building assets
+2018-03-22T12:03:22.512Z - normal: Start building raw assets
+2018-03-22T12:03:22.513Z - normal: Start building plugin scripts
+2018-03-22T12:03:22.562Z - normal: Finish building raw assets
+2018-03-22T12:03:22.623Z - normal: Generating main.js from C:\CocosCreator\resources\static\build-templates\shares\main.js
+2018-03-22T12:03:22.670Z - normal: Generating html from C:\CocosCreator\resources\static\build-templates\web-mobile\template\index.html
+2018-03-22T12:03:22.684Z - normal: Built to "C:\Users\admin\Documents\HelloGame\build\web-mobile" successfully
+2018-03-22T12:04:11.903Z - warn: No need to specify the "type" of "Fish.delta" because cc.Vec2 is a child class of ValueType. Just set the default value to 'new cc.Vec2()' and it will be handled properly. Fish delta cc.Vec2
+2018-03-22T12:04:14.644Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "C:\\Users\\admin\\Documents\\HelloGame\\build",
+  "debug": false,
+  "dest": "C:\\Users\\admin\\Documents\\HelloGame\\build\\web-mobile",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "platform": "web-mobile",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "orientation": "portrait"
+  },
+  "renderMode": "0",
+  "scenes": [
+    "2d2f792f-a40c-49bb-a189-ed176a246e49",
+    "b0087c3b-efe4-44d4-acce-1b931c481981"
+  ],
+  "sourceMaps": false,
+  "startScene": "2d2f792f-a40c-49bb-a189-ed176a246e49",
+  "template": "link",
+  "title": "hello_world",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "landscape",
+  "wechatgame": {
+    "appid": "wx6ac3f5090a6b99c5",
+    "orientation": "portrait"
+  },
+  "xxteaKey": "6b2e46e4-17e1-46",
+  "zipCompressJs": true,
+  "project": "C:\\Users\\admin\\Documents\\HelloGame",
+  "projectName": "hello_world",
+  "debugBuildWorker": false
+}
+2018-03-22T12:04:14.644Z - normal: Building C:\Users\admin\Documents\HelloGame
+2018-03-22T12:04:14.644Z - normal: Destination C:\Users\admin\Documents\HelloGame\build\web-mobile
+2018-03-22T12:04:14.644Z - normal: Delete C:\Users\admin\Documents\HelloGame\build\web-mobile\**\*
+2018-03-22T12:04:17.055Z - normal: Compiled project javascript file successfully
+2018-03-22T12:04:17.055Z - normal: Start building assets
+2018-03-22T12:04:17.055Z - normal: Start spawn build-worker
+2018-03-22T12:04:17.849Z - normal: Finish spawn build-worker
+2018-03-22T12:04:17.849Z - normal: Start init build-worker
+2018-03-22T12:04:20.095Z - normal: 1.9.0
+2018-03-22T12:04:20.174Z - normal: Finish init build-worker
+2018-03-22T12:04:20.175Z - normal: Start build-assets in worker
+2018-03-22T12:04:20.339Z - warn: Script attached to "Canvas" in scene "login.fire" is missing or invalid. Detailed information:
+Node path: "Canvas"
+Asset url: "db://assets/Scene/login.fire"
+Script UUID: "d06601d6-b6c8-4b24-8861-643ed7d49d63"
+Class ID: "d0660HWtshLJIhhZD7X1J1j"
+
+2018-03-22T12:04:20.497Z - normal: Finish build-assets in worker
+2018-03-22T12:04:20.508Z - normal: Finish building assets
+2018-03-22T12:04:20.521Z - normal: Start building raw assets
+2018-03-22T12:04:20.521Z - normal: Start building plugin scripts
+2018-03-22T12:04:20.578Z - normal: Finish building raw assets
+2018-03-22T12:04:20.581Z - normal: Generating main.js from C:\CocosCreator\resources\static\build-templates\shares\main.js
+2018-03-22T12:04:20.584Z - normal: Generating html from C:\CocosCreator\resources\static\build-templates\web-mobile\template\index.html
+2018-03-22T12:04:20.638Z - normal: Built to "C:\Users\admin\Documents\HelloGame\build\web-mobile" successfully
+2018-03-22T12:04:45.643Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "C:\\Users\\admin\\Documents\\HelloGame\\build",
+  "debug": false,
+  "dest": "C:\\Users\\admin\\Documents\\HelloGame\\build\\web-mobile",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "platform": "web-mobile",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "orientation": "portrait"
+  },
+  "renderMode": "0",
+  "scenes": [
+    "b0087c3b-efe4-44d4-acce-1b931c481981",
+    "2d2f792f-a40c-49bb-a189-ed176a246e49"
+  ],
+  "sourceMaps": false,
+  "startScene": "b0087c3b-efe4-44d4-acce-1b931c481981",
+  "template": "link",
+  "title": "hello_world",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "landscape",
+  "wechatgame": {
+    "appid": "wx6ac3f5090a6b99c5",
+    "orientation": "portrait"
+  },
+  "xxteaKey": "6b2e46e4-17e1-46",
+  "zipCompressJs": true,
+  "project": "C:\\Users\\admin\\Documents\\HelloGame",
+  "projectName": "hello_world",
+  "debugBuildWorker": false
+}
+2018-03-22T12:04:45.644Z - normal: Building C:\Users\admin\Documents\HelloGame
+2018-03-22T12:04:45.644Z - normal: Destination C:\Users\admin\Documents\HelloGame\build\web-mobile
+2018-03-22T12:04:45.644Z - normal: Delete C:\Users\admin\Documents\HelloGame\build\web-mobile\**\*
+2018-03-22T12:04:48.359Z - normal: Compiled project javascript file successfully
+2018-03-22T12:04:48.360Z - normal: Start building assets
+2018-03-22T12:04:48.360Z - normal: Start spawn build-worker
+2018-03-22T12:04:49.082Z - normal: Finish spawn build-worker
+2018-03-22T12:04:49.082Z - normal: Start init build-worker
+2018-03-22T12:04:51.108Z - normal: 1.9.0
+2018-03-22T12:04:51.191Z - normal: Finish init build-worker
+2018-03-22T12:04:51.191Z - normal: Start build-assets in worker
+2018-03-22T12:04:51.323Z - warn: Script attached to "Canvas" in scene "login.fire" is missing or invalid. Detailed information:
+Node path: "Canvas"
+Asset url: "db://assets/Scene/login.fire"
+Script UUID: "d06601d6-b6c8-4b24-8861-643ed7d49d63"
+Class ID: "d0660HWtshLJIhhZD7X1J1j"
+
+2018-03-22T12:04:51.496Z - normal: Finish build-assets in worker
+2018-03-22T12:04:51.508Z - normal: Finish building assets
+2018-03-22T12:04:51.528Z - normal: Start building raw assets
+2018-03-22T12:04:51.529Z - normal: Start building plugin scripts
+2018-03-22T12:04:51.568Z - normal: Finish building raw assets
+2018-03-22T12:04:51.573Z - normal: Generating main.js from C:\CocosCreator\resources\static\build-templates\shares\main.js
+2018-03-22T12:04:51.576Z - normal: Generating html from C:\CocosCreator\resources\static\build-templates\web-mobile\template\index.html
+2018-03-22T12:04:51.621Z - normal: Built to "C:\Users\admin\Documents\HelloGame\build\web-mobile" successfully

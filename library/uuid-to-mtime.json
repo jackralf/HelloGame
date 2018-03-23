@@ -235,8 +235,8 @@
     "relativePath": "Script"
   },
   "2d2f792f-a40c-49bb-a189-ed176a246e49": {
-    "asset": 1521624459805,
-    "meta": 1521624459834,
+    "asset": 1521718795800,
+    "meta": 1521718795844,
     "relativePath": "Scene\\helloworld.fire"
   },
   "7b81d4e8-ec84-4716-968d-500ac1d78a54": {
@@ -279,24 +279,44 @@
     "meta": 1521623538499,
     "relativePath": "fish.prefab"
   },
-  "405ecacb-dde7-4b88-b2fd-38bfc5e0f24a": {
-    "asset": 1521622810213,
-    "meta": 1521622812142,
-    "relativePath": "Script\\Config.js"
-  },
   "5b6f5522-60bb-42e8-ade9-ca2138026b1b": {
     "asset": 1521623258762,
     "meta": 1521623275639,
     "relativePath": "Script\\Fish.js"
   },
-  "280c3aec-6492-4a9d-9f51-a9b00b570b4a": {
-    "asset": 1521623995959,
-    "meta": 1521623998355,
-    "relativePath": "Script\\HelloWorld.js"
-  },
   "23657e5c-9a11-4baa-bf38-58f744d3ccfb": {
     "asset": 1521624420493,
     "meta": 1521624422967,
     "relativePath": "Script\\Hook.js"
+  },
+  "405ecacb-dde7-4b88-b2fd-38bfc5e0f24a": {
+    "asset": 1521626113888,
+    "meta": 1521631898583,
+    "relativePath": "Script\\Config.js"
+  },
+  "b0087c3b-efe4-44d4-acce-1b931c481981": {
+    "asset": 1521703940482,
+    "meta": 1521703940505,
+    "relativePath": "Scene\\login.fire"
+  },
+  "53862bb8-3222-436b-bcca-2613ac8a2f15": {
+    "asset": 1521703065707,
+    "meta": 1521703082267,
+    "relativePath": "Script\\onfire.js"
+  },
+  "9b0a1618-ee6c-4b64-91cb-f8fb0731d4d9": {
+    "asset": 1521718748578,
+    "meta": 1521718752359,
+    "relativePath": "Script\\Login.js"
+  },
+  "280c3aec-6492-4a9d-9f51-a9b00b570b4a": {
+    "asset": 1521719942612,
+    "meta": 1521719974831,
+    "relativePath": "Script\\HelloWorld.js"
+  },
+  "d06601d6-b6c8-4b24-8861-643ed7d49d63": {
+    "asset": 1521720249632,
+    "meta": 1521720251654,
+    "relativePath": "Script\\Network.js"
   }
 }

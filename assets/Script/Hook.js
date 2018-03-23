@@ -56,6 +56,10 @@ cc.Class({
     },
 
     update (dt) {
+        
+    },
+
+    tick: function(dt) {
         if(this.state == "FIRE") {
             this.node.x += Math.cos(this.rotationAngle * Math.PI / 180) * this.fireSpeed * dt;
             this.node.y -= Math.sin(this.rotationAngle * Math.PI / 180) * this.fireSpeed * dt;

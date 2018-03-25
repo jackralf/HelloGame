@@ -12,7 +12,7 @@ window.network = {
 
     init: function() {
         var net = this;
-        var ws = new WebSocket("ws://192.168.5.107:8080/");
+        var ws = new WebSocket("ws://192.168.0.106:8080/");
         this.ws = ws;
         ws.onopen = function (event) {
             console.log("Send Text WS was opened.");
@@ -41,13 +41,17 @@ window.network = {
         this.ws.send(JSON.stringify(params));
     },
 
+    ready: function() {
+        var params = {code:"ready"};
+        this.ws.send(JSON.stringify(params));
+    },
+
     handleResponse: function(response) {
-        cc.log("response:" + response);
         var code = response.code;
         if(code == "login") {
             onFire.fire("start_game", response);
-        } else if(code == "fire") {
-            onFire.fire("player_fire", response);
+        } else if(code == "tick") {
+            onFire.fire("server_tick", response);
         }
     }
 };

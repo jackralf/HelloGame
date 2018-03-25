@@ -32,10 +32,9 @@ cc.Class({
             default: null,
             type: cc.Node,
         },
-        delta:{
-            default: null,
-            type: cc.Vec2,
-        },
+        delta:cc.Vec2,
+        id:0,
+        score:0,
         direction:1,
         speed:100,
     },
@@ -60,6 +59,8 @@ cc.Class({
             this.node.setPosition(this.node.parent.convertToNodeSpace(worldPos).add(this.delta));
             var hook = this.hookNode.getComponent("Hook");
             if(hook.state == "IDLE") {
+                cc.log("fish add score");
+                onFire.fire("add_score", {hookId:hook.id, fishScore:this.score});
                 this.node.destroy();
             }
         } else {

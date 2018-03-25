@@ -28,8 +28,9 @@ cc.Class({
         //     }
         // },
 
+        id:0,
         MAX_LENGTH:800,
-        rotationAngle: 0,
+        rotationAngle: 30,
         rotationDirection: 1,
         rotationSpeed: 1,
         fireSpeed: 100,
@@ -60,6 +61,7 @@ cc.Class({
     },
 
     tick: function(dt) {
+        console.log("hook tick");
         if(this.state == "FIRE") {
             this.node.x += Math.cos(this.rotationAngle * Math.PI / 180) * this.fireSpeed * dt;
             this.node.y -= Math.sin(this.rotationAngle * Math.PI / 180) * this.fireSpeed * dt;
@@ -79,10 +81,10 @@ cc.Class({
                 this.state = "IDLE";
             }
         } else if(this.state == "IDLE") {
-            if(this.rotationAngle >= 180) {
+            if(this.rotationAngle >= 150) {
                 this.rotationDirection = -1;
             }
-            if(this.rotationAngle <= 0) {
+            if(this.rotationAngle <= 30) {
                 this.rotationDirection = 1;
             }
             this.rotationAngle += this.rotationDirection * this.rotationSpeed * dt;

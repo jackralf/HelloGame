@@ -51,6 +51,8 @@ cc.Class({
         nScore1:0,
         nScore2:0,
         nTime:120,
+        sName1:"",
+        sName2:"",
     },
 
     // use this for initialization
@@ -88,6 +90,8 @@ cc.Class({
     },
 
     startGame: function(params) {
+        this.sName1 = params.name1;
+        this.sName2 = params.name2;
         this.name1.string = params.name1;
         this.name2.string = params.name2;
         this.score1.string = "0";
@@ -100,14 +104,13 @@ cc.Class({
         }
         var that = this;
         setInterval(function() {
-            that.nTime -= 1;
             that.showTime();
         }, 1000);
     },
 
     showTime: function() {
         var m = parseInt(this.nTime / 60);
-        var s = this.nTime % 60;
+        var s = parseInt(this.nTime % 60);
         var str = m.toString() + ":" + s.toString();
         if(s < 10) {
             str = m.toString() + ":0" + s.toString();
@@ -130,6 +133,14 @@ cc.Class({
     },
 
     onServerTick: function(params) {
+        this.nTime -= 0.1;
+        if(this.nTime <= 0) {
+            var params = {pos:this.pos, score1:this.nScore1, score2:this.nScore2, name1:this.sName1, name2:this.sName2};
+            network.close();
+            cc.director.loadScene("login", function() {
+                onFire.fire("login_scene", params);
+            });
+        }
         this.serverTick[params.idx] = {};
         if(params.op) {
             this.serverTick[params.idx].op = params.op;

@@ -37,6 +37,7 @@ cc.Class({
         score:0,
         direction:1,
         speed:100,
+        stopTick:false,
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -54,6 +55,10 @@ cc.Class({
     },
 
     tick: function(dt) {
+        if(this.stopTick) {
+            return;
+        }
+
         if(this.hookNode &&  this.delta && this.onCatched) {
             var worldPos = this.hookNode.parent.convertToWorldSpace(this.hookNode.position);
             this.node.setPosition(this.node.parent.convertToNodeSpace(worldPos).add(this.delta));
@@ -62,6 +67,7 @@ cc.Class({
                 cc.log("fish add score");
                 onFire.fire("add_score", {hookId:hook.id, fishScore:this.score});
                 this.node.destroy();
+                this.stopTick = true;
             }
         } else {
             this.node.x += this.speed * this.direction * dt;

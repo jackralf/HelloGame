@@ -12,7 +12,7 @@ window.network = {
 
     init: function() {
         var net = this;
-        var ws = new WebSocket("ws://192.168.0.106:8080/");
+        var ws = new WebSocket("ws://35.187.146.24:8080/");
         this.ws = ws;
         ws.onopen = function (event) {
             console.log("Send Text WS was opened.");
@@ -44,6 +44,10 @@ window.network = {
     ready: function() {
         var params = {code:"ready"};
         this.ws.send(JSON.stringify(params));
+    },
+
+    close: function() {
+        this.ws.close();
     },
 
     handleResponse: function(response) {

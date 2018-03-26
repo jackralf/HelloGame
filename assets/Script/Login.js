@@ -26,7 +26,7 @@ cc.Class({
 
     onLoad () {
         network.init();
-        
+        onFire.on("login_scene", this.onLoginScene, this);
     },
 
     startGame: function(params) {
@@ -34,6 +34,10 @@ cc.Class({
         cc.director.loadScene("helloworld", function() {
             onFire.fire("start_scene", params);
         });
+    },
+
+    onLoginScene: function(params) {
+        
     },
 
     start () {

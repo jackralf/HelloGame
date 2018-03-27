@@ -178,10 +178,9 @@ cc.Class({
                 this.tick(this.logicDelta / this.MAX_TICK_COUNT);
             }
             this.ticks += 1;
-            this.perTickCount = 0;
-            
-            return;
+            this.perTickCount = 0;            
         }
+        
         this.canFire = true;
         if(this.perTickCount < this.MAX_TICK_COUNT) {
             this.tick(this.logicDelta / this.MAX_TICK_COUNT);

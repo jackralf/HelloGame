@@ -20,6 +20,11 @@ cc.Class({
         //         this._bar = value;
         //     }
         // },
+        editName:{
+            default:null,
+            type:cc.EditBox
+        },
+        ctime: null,
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -30,7 +35,8 @@ cc.Class({
     },
 
     startGame: function(params) {
-        cc.log(params);
+        clearTimeout(this.ctime);
+        Toast.showText("进入游戏中", Toast.LENGTH_LONG);
         cc.director.loadScene("helloworld", function() {
             onFire.fire("start_scene", params);
         });
@@ -41,15 +47,31 @@ cc.Class({
     },
 
     start () {
+        var name = cc.sys.localStorage.getItem("name");
+        if(name != null && name != "") {
+            this.editName.string = name;
+        }
         onFire.one("start_game", this.startGame, this);
     },
 
     callback: function (event, customEventData) {
         console.log("start ...");
+        var name = this.editName.string;
+        if(name == "") {
+            Toast.showText("请输入名字", Toast.LENGTH_LONG);
+            return;
+        }
+        cc.sys.localStorage.setItem("name", name);
+
         if(network.isConnected()) {
-            network.login("jack");
+            Toast.showText("正在匹配中...", Toast.LENGTH_MAX);
+            network.login(name);
+            this.ctime = setTimeout(function() {
+                Toast.showText("请邀请好友一起玩!!!", Toast.LENGTH_LONG);
+            }, 6000);
         } else {
-            console.log("net error!!!");
+            Toast.showText("网络异常", Toast.LENGTH_LONG);
+            network.init();
         }
     },
     // update (dt) {},

@@ -86,6 +86,7 @@ cc.Class({
         }        
 
         network.ready();
+        this.nTime = 120;
         this.canFire = true;
     },
 
@@ -123,10 +124,12 @@ cc.Class({
         var rotation = params.rotation;
         if(pos == 1) {
             var hook = this.hook1.getComponent("Hook");
+            this.hook1.rotation = rotation;
             hook.rotationAngle = rotation;
             hook.fire();
         } else {
             var hook = this.hook2.getComponent("Hook");
+            this.hook2.rotation = rotation;
             hook.rotationAngle = rotation;
             hook.fire();
         }
@@ -137,8 +140,8 @@ cc.Class({
         if(this.nTime <= 0) {
             var params = {pos:this.pos, score1:this.nScore1, score2:this.nScore2, name1:this.sName1, name2:this.sName2};
             network.close();
-            cc.director.loadScene("login", function() {
-                onFire.fire("login_scene", params);
+            cc.director.loadScene("result", function() {
+                onFire.fire("result_scene", params);
             });
         }
         this.serverTick[params.idx] = {};
@@ -152,9 +155,11 @@ cc.Class({
         var hookId = params.hookId;
         var fishScore = params.fishScore;
         if(hookId == 1) {
+            Toast.showText(this.sName1 + "抓到一条大鱼!!!", Toast.LENGTH_LONG);
             this.nScore1 += fishScore;
             this.score1.string = this.nScore1; 
         } else if(hookId == 2) {
+            Toast.showText(this.sName2 + "抓到一条大鱼!!!", Toast.LENGTH_LONG);
             this.nScore2 += fishScore;
             this.score2.string = this.nScore2;
         }

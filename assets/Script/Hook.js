@@ -30,7 +30,7 @@ cc.Class({
 
         id:0,
         MAX_LENGTH:800,
-        rotationAngle: 30,
+        rotationAngle: 210,
         rotationDirection: 1,
         rotationSpeed: 1,
         fireSpeed: 100,
@@ -76,15 +76,15 @@ cc.Class({
             }
             this.node.x -= Math.cos(this.rotationAngle * Math.PI / 180) * pullSpeed * dt;
             this.node.y += Math.sin(this.rotationAngle * Math.PI / 180) * pullSpeed * dt;
-            if(this.node.y >= 0) {
+            if(this.node.y <= 0) {
                 this.node.setPosition(cc.v2(0, 0));
                 this.state = "IDLE";
             }
         } else if(this.state == "IDLE") {
-            if(this.rotationAngle >= 150) {
+            if(this.rotationAngle >= 330) {
                 this.rotationDirection = -1;
             }
-            if(this.rotationAngle <= 30) {
+            if(this.rotationAngle <= 210) {
                 this.rotationDirection = 1;
             }
             this.rotationAngle += this.rotationDirection * this.rotationSpeed * dt;

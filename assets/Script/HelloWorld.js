@@ -78,19 +78,21 @@ cc.Class({
             fish.parent = this.node;
             var js = fish.getComponent("Fish");
             js.id = config.id;
+            js.type = config.type;
             js.score = config.score;
             js.direction = config.direction;
             js.speed = config.speed;
+            js.init();
             fish.setPosition(config.x, config.y);
             this.fishArr.push(fish);
         }        
 
         network.ready();
-        this.nTime = 120;
         this.canFire = true;
     },
 
     startGame: function(params) {
+        this.nTime = 120;
         this.sName1 = params.name1;
         this.sName2 = params.name2;
         this.name1.string = params.name1;
@@ -140,6 +142,7 @@ cc.Class({
         if(this.nTime <= 0) {
             var params = {pos:this.pos, score1:this.nScore1, score2:this.nScore2, name1:this.sName1, name2:this.sName2};
             network.close();
+            this.getComponent("cc.AudioSource").pause();
             cc.director.loadScene("result", function() {
                 onFire.fire("result_scene", params);
             });

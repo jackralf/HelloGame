@@ -34,6 +34,7 @@ cc.Class({
         },
         delta:cc.Vec2,
         id:0,
+        type:1,
         score:0,
         direction:1,
         speed:100,
@@ -52,6 +53,15 @@ cc.Class({
 
     update (dt) {
         
+    },
+
+    init:function() {
+        // var sprite = this.getComponent(cc.Sprite);
+        // sprite.spriteFrame.setTexture(cc.url.raw("Texture/resources/" + this.type + ".jpg"));
+        var myNode = this.node; 
+        cc.loader.loadRes(this.type + ".jpg", cc.SpriteFrame, function (err, spriteFrame) {
+            myNode.getComponent(cc.Sprite).spriteFrame = spriteFrame;
+        });
     },
 
     tick: function(dt) {

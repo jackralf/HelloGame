@@ -37,6 +37,7 @@ cc.Class({
     startGame: function(params) {
         clearTimeout(this.ctime);
         Toast.showText("进入游戏中", Toast.LENGTH_LONG);
+        this.getComponent("cc.AudioSource").pause();
         cc.director.loadScene("helloworld", function() {
             onFire.fire("start_scene", params);
         });

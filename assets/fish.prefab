@@ -47,13 +47,13 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 195,
-      "height": 270
+      "width": 105,
+      "height": 150
     },
     "_rotationX": 0,
     "_rotationY": 0,
-    "_scaleX": 0.3,
-    "_scaleY": 0.3,
+    "_scaleX": 0.5,
+    "_scaleY": 0.5,
     "_position": {
       "__type__": "cc.Vec2",
       "x": -850,
@@ -75,7 +75,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "31bc895a-c003-4566-a9f3-2e54ae1c17dc"
+      "__uuid__": "87803d1c-e0a8-48d5-89ff-526f88281c6d"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -103,11 +103,15 @@
     "onCatched": false,
     "hookNode": null,
     "delta": null,
+    "id": 0,
+    "type": 1,
+    "score": 0,
     "direction": 1,
-    "speed": 100
+    "speed": 100,
+    "stopTick": false
   },
   {
-    "__type__": "cc.CircleCollider",
+    "__type__": "cc.BoxCollider",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -120,7 +124,11 @@
       "x": 0,
       "y": 0
     },
-    "_radius": 135
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 105,
+      "height": 150
+    }
   },
   {
     "__type__": "cc.PrefabInfo",

@@ -12,7 +12,9 @@ window.network = {
 
     init: function() {
         var net = this;
-        var ws = new WebSocket("wss://xyx.lilithgame.com:10020/");
+        var onlineUrl = "wss://xyx.lilithgame.com:10020/";
+        var testUrl = "ws://127.0.0.1:10020/";
+        var ws = new WebSocket(testUrl);
         this.ws = ws;
         ws.onopen = function (event) {
             console.log("Send Text WS was opened.");

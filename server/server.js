@@ -1,5 +1,13 @@
 const WebSocket = require('ws');
-const wss = new WebSocket.Server({ port: 8080 });
+const wss = new WebSocket.Server({ port: 10020 });
+
+const log4js = require('log4js');
+log4js.configure({
+    appenders: { cheese: { type: 'file', filename: 'cheese.log' } },
+    categories: { default: { appenders: ['cheese'], level: 'debug' } }
+});
+const log = log4js.getLogger('cheese');
+
 
 function Room(player1, player2) {
     this.a=player1,
@@ -13,6 +21,7 @@ function Room(player1, player2) {
         player1.ws.send(JSON.stringify(response));
         response.pos = 2;
         player2.ws.send(JSON.stringify(response));
+        log.debug("create room success");
     }
 }
 
@@ -28,6 +37,7 @@ function heartbeat() {
 const interval = setInterval(function ping() {
     wss.clients.forEach(function each(ws) {
         if (ws.isAlive === false) {
+            closeRoom(ws);
             return ws.terminate();
         }
 
@@ -36,14 +46,22 @@ const interval = setInterval(function ping() {
     });
 }, 30000);
 
+function closeRoom(ws) {
+    for(var tmp of waitPlayers) {
+        if(tmp.ws == ws) {
+            waitPlayers.delete(tmp);
+        }
+    }
+}
+
 wss.on('connection', function (ws, req) {
-    console.log("on connection %s", req.connection.remoteAddress);
+    log.debug("connected ip: %s", req.connection.remoteAddress);
     ws.isAlive = true;
     ws.on('pong', heartbeat);
 
     ws.on('message', function (message) {
         var msg = JSON.parse(message);
-        console.log('message code: %s', msg.code);
+        log.debug("receive message code:%s", msg.code);
         handleMessage(msg, ws);
     });
 });
@@ -51,7 +69,7 @@ wss.on('connection', function (ws, req) {
 function handleMessage(msg, ws) {
     var code = msg.code;
     if(code == "login") {
-        console.log("player name %s", msg.name);
+        log.debug("login: %s", msg.name);
         makePair({ws:ws, msg:msg})
     } else if(code == "fire") {
         for(var room of playerRooms) {
@@ -72,7 +90,7 @@ function handleMessage(msg, ws) {
             if(ws == room.a.ws || ws == room.b.ws) {
                 room.ready += 1;
                 if(room.ready == 2) {
-                    console.log("player room ready ");
+                    log.debug("room ready for tick");
                     var flag = setInterval(function tick() {
                         var idx = room.ticks;
                         var msg = {code:"tick", idx:idx};
@@ -94,28 +112,38 @@ function handleMessage(msg, ws) {
                 }
             }
         }
+    } else if(code == "score") {
+        for(var room of playerRooms) {
+            if (ws == room.a.ws || ws == room.b.ws) {
+                if(room.a.ws.readyState === WebSocket.OPEN) {
+                    room.a.ws.send(JSON.stringify(msg));
+                }
+                if(room.b.ws.readyState === WebSocket.OPEN) {
+                    room.b.ws.send(JSON.stringify(msg));
+                }
+            }
+        }
     }
 }
 
 function makePair(curPlayer) {
-    console.log("wait player size %d", waitPlayers.size);
+    log.debug("waitting player size: %d", waitPlayers.size);
     var player = null;
     for(var tmp of waitPlayers) {
-        if(tmp.ws.isAlive && tmp.ws != curPlayer.ws) {
+        if(tmp.ws.readyState === WebSocket.OPEN && tmp.ws != curPlayer.ws) {
             player = tmp;
             break;
         }
     }
     if(player == null) {
-        console.log("waitting for another player");
+        log.debug("waitting for another player");
         waitPlayers.add(curPlayer);
     } else {
-        console.log("create room ...");
+        log.debug("create room begin");
         waitPlayers.delete(player);
         var room = new Room(curPlayer, player);
         playerRooms.add(room);
         room.reply();
     }
-    console.log("==================================");
 }
 

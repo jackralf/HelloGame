@@ -661,8 +661,7 @@
     "editName": {
       "__id__": 12
     },
-    "ctime": null,
-    "audioSource": null
+    "ctime": null
   },
   {
     "__type__": "cc.AudioSource",

@@ -41,6 +41,11 @@ window.network = {
         this.ws.send(JSON.stringify(params));
     },
 
+    score:function(pos, score) {
+        var params = {code:"score", pos:pos, score:score};
+        this.ws.send(JSON.stringify(params));
+    },
+
     ready: function() {
         var params = {code:"ready"};
         this.ws.send(JSON.stringify(params));
@@ -56,6 +61,8 @@ window.network = {
             onFire.fire("start_game", response);
         } else if(code == "tick") {
             onFire.fire("server_tick", response);
+        } else if(code == "score") {
+            onFire.fire("add_score", response);
         }
     }
 };

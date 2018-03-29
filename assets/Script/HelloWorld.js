@@ -155,15 +155,15 @@ cc.Class({
 
     addScore: function(params) {
         cc.log("add socre!!");
-        var hookId = params.hookId;
-        var fishScore = params.fishScore;
-        if(hookId == 1) {
-            Toast.showText(this.sName1 + "抓到一条大鱼!!!", Toast.LENGTH_LONG);
-            this.nScore1 += fishScore;
+        var pos = params.pos;
+        var score = params.score;
+        if(pos == 1) {
+            Toast.showText(this.sName1 + "抓到一张好牌,得到" + score + "分", Toast.LENGTH_LONG);
+            this.nScore1 += score;
             this.score1.string = this.nScore1; 
-        } else if(hookId == 2) {
-            Toast.showText(this.sName2 + "抓到一条大鱼!!!", Toast.LENGTH_LONG);
-            this.nScore2 += fishScore;
+        } else if(pos == 2) {
+            Toast.showText(this.sName2 + "抓到一张好牌,得到" + score + "分", Toast.LENGTH_LONG);
+            this.nScore2 += score;
             this.score2.string = this.nScore2;
         }
     },

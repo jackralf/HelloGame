@@ -75,7 +75,7 @@ cc.Class({
             var hook = this.hookNode.getComponent("Hook");
             if(hook.state == "IDLE") {
                 cc.log("fish add score");
-                onFire.fire("add_score", {hookId:hook.id, fishScore:this.score});
+                network.score(hook.id, this.score);
                 this.node.destroy();
                 this.stopTick = true;
             }
@@ -91,15 +91,14 @@ cc.Class({
         console.log('on collision enter2');
         var hook = other.getComponent("Hook");
         console.log("state:" + hook.state);
-        if(hook.state == "FIRE") {
+        if(hook.state == "FIRE" && this.onCatched == false) {
             hook.catch = true;
             hook.state = "PULL";
 
             this.onCatched = true;
-            this.hookNode = other.node;
-            this.node.color = cc.Color.RED;
+            this.hookNode = other.node;    
             var worldPos = this.hookNode.parent.convertToWorldSpace(this.hookNode.position);
-            this.delta = this.node.position.sub(this.node.parent.convertToNodeSpace(worldPos))
+            this.delta = this.node.position.sub(this.node.parent.convertToNodeSpace(worldPos));
             cc.log("Node Position: " + this.delta);
         }
     },

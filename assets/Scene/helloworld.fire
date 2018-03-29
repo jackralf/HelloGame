@@ -483,8 +483,8 @@
     "rotationAngle": 210,
     "rotationDirection": 1,
     "rotationSpeed": 100,
-    "fireSpeed": 500,
-    "pullSpeed": 500,
+    "fireSpeed": 700,
+    "pullSpeed": 700,
     "state": "IDLE",
     "catch": false
   },
@@ -833,8 +833,8 @@
     "rotationAngle": 210,
     "rotationDirection": 1,
     "rotationSpeed": 100,
-    "fireSpeed": 500,
-    "pullSpeed": 500,
+    "fireSpeed": 700,
+    "pullSpeed": 700,
     "state": "IDLE",
     "catch": false
   },
@@ -1289,8 +1289,7 @@
     "nScore2": 0,
     "nTime": 120,
     "sName1": "",
-    "sName2": "",
-    "audioSource": null
+    "sName2": ""
   },
   {
     "__type__": "cc.AudioSource",

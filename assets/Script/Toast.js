@@ -34,17 +34,17 @@ Toast.makeText = function (text, duration) {
             if (Toast.bgSpriteFrame === undefined) {
                 self = this;
                 (function () {
-                    cc.loader.load({ 'uuid': 'b43ff3c2-02bb-4874-81f7-f2dea6970f18' },
+                    cc.loader.loadRes("tip.png", cc.SpriteFrame,
                         function (error, result) {
                             if (error) {
                                 cc.error(error);
                                 return;
                             }
-                            Toast.bgSpriteFrame = new cc.SpriteFrame(result);
-                            Toast.bgSpriteFrame.insetTop = 3;
-                            Toast.bgSpriteFrame.insetBottom = 3;
-                            Toast.bgSpriteFrame.insetLeft = 4;
-                            Toast.bgSpriteFrame.insetRight = 4;
+                            Toast.bgSpriteFrame = result;
+                            Toast.bgSpriteFrame.insetTop = 20;
+                            Toast.bgSpriteFrame.insetBottom = 20;
+                            Toast.bgSpriteFrame.insetLeft = 20;
+                            Toast.bgSpriteFrame.insetRight = 20;
                             //加载完再调用
                             self.show();
                         })
@@ -72,12 +72,12 @@ Toast.makeText = function (text, duration) {
             var textLabel = textNode.addComponent(cc.Label);
             textLabel.horizontalAlign = cc.Label.HorizontalAlign.CENTER;
             textLabel.verticalAlign = cc.Label.VerticalAlign.CENTER;
-            textLabel.fontSize = 20;
+            textLabel.fontSize = 30;
             textLabel.string = _text;
 
             //背景图片与文本内容的间距
-            var hPadding = textLabel.fontSize / 8;
-            var vPadding = 2;
+            var hPadding = 10;
+            var vPadding = 10;
             bgLayout.paddingLeft = hPadding;
             bgLayout.paddingRight = hPadding;
             bgLayout.paddingTop = vPadding;

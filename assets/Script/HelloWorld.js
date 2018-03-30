@@ -42,11 +42,12 @@ cc.Class({
         },
         pos:0,
         logicDelta:0.1,
+        perLogicDelta:0.02,
         ticks:1,
         fishArr:[],
         serverTick:[],
         perTickCount:0,
-        MAX_TICK_COUNT: 6,
+        MAX_TICK_COUNT: 5,
         canFire: false,
         nScore1:0,
         nScore2:0,
@@ -68,6 +69,17 @@ cc.Class({
         onFire.on("start_scene", this.startGame, this);
         onFire.on("server_tick", this.onServerTick, this);
         onFire.on("add_score", this.addScore, this);
+
+        // this.ticks = 1;
+        // this.fishArr = [];
+        // this.serverTick = [];
+        // this.perTickCount = 0;
+        // this.nScore1 = 0;
+        // this.nScore2 = 0;
+        // this.nTime = 120;
+        // this.sName1 = "";
+        // this.sName2 = "";
+
 
         this.hook1.getComponent("Hook").id = 1;
         this.hook2.getComponent("Hook").id = 2;
@@ -91,6 +103,14 @@ cc.Class({
         this.canFire = true;
     },
 
+    onDestroy() {
+        this.unscheduleAllCallbacks();
+        onFire.un("start_scene");
+        onFire.un("server_tick");
+        onFire.un("add_score");
+        this.getComponent("cc.AudioSource").pause();
+    },
+
     startGame: function(params) {
         this.nTime = 120;
         this.sName1 = params.name1;
@@ -106,9 +126,9 @@ cc.Class({
             this.selfHook = this.hook2;
         }
         var that = this;
-        setInterval(function() {
+        this.schedule(function() {
             that.showTime();
-        }, 1000);
+        }, 1);
     },
 
     showTime: function() {
@@ -142,7 +162,6 @@ cc.Class({
         if(this.nTime <= 0) {
             var params = {pos:this.pos, score1:this.nScore1, score2:this.nScore2, name1:this.sName1, name2:this.sName2};
             network.close();
-            this.getComponent("cc.AudioSource").pause();
             cc.director.loadScene("result", function() {
                 onFire.fire("result_scene", params);
             });
@@ -175,22 +194,26 @@ cc.Class({
             return;
         }
 
-        while(this.serverTick[this.ticks + 1] != null) {
+        if(this.serverTick[this.ticks + 1] != null) {
             this.canFire = false;
             for(var i = 0; i < this.MAX_TICK_COUNT - this.perTickCount; i ++) {
-                this.tick(this.logicDelta / this.MAX_TICK_COUNT);
+                this.tick(this.perLogicDelta);
             }
             this.ticks += 1;
-            this.perTickCount = 0;            
+            this.perTickCount = 0;
+            return;      
         }
         
-        this.canFire = true;
-        if(this.perTickCount < this.MAX_TICK_COUNT) {
-            this.tick(this.logicDelta / this.MAX_TICK_COUNT);
-            this.perTickCount += 1;
-        } else {
-            this.ticks += 1;
-            this.perTickCount = 0;
+        if(this.serverTick[this.ticks] != null)
+        {
+            this.canFire = true;
+            if(this.perTickCount < this.MAX_TICK_COUNT) {
+                this.tick(this.perLogicDelta);
+                this.perTickCount += 1;
+            } else {
+                this.ticks += 1;
+                this.perTickCount = 0;
+            }
         }
     },
 
@@ -206,11 +229,9 @@ cc.Class({
         var op = this.serverTick[this.ticks].op;
         if(op != null) {
             if(op.pos1 != null) {
-                cc.log("player 2 fire");
                 this.playerFire({pos:1, rotation:op.rotation1})    
             } 
             if(op.pos2 != null) {
-                cc.log("player 2 fire");
                 this.playerFire({pos:2, rotation:op.rotation2}) 
             }
             this.serverTick[this.ticks].op = null;
@@ -223,7 +244,6 @@ cc.Class({
     },
 
     callback: function (event, customEventData) {
-        console.log("fire ....");
         if(this.canFire == false) {
             return;
         }

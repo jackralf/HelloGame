@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "72d6e486-b149-40e8-bd5e-a91ac28c5870",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "西装手1副本": {
+      "ver": "1.0.3",
+      "uuid": "e76fb267-2676-43ee-8283-73746fed886c",
+      "rawTextureUuid": "72d6e486-b149-40e8-bd5e-a91ac28c5870",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 97,
+      "height": 299,
+      "rawWidth": 97,
+      "rawHeight": 299,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

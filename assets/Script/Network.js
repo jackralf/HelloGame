@@ -14,7 +14,7 @@ window.network = {
         var net = this;
         var onlineUrl = "wss://xyx.lilithgame.com:10020/";
         var testUrl = "ws://127.0.0.1:10020/";
-        var ws = new WebSocket(testUrl);
+        var ws = new WebSocket(onlineUrl);
         this.ws = ws;
         ws.onopen = function (event) {
             console.log("Send Text WS was opened.");
@@ -22,7 +22,7 @@ window.network = {
         };
         ws.onmessage = function (event) {
             var response = JSON.parse(event.data)
-            console.log("response msg code: " + response.code);
+            // console.log("response msg code: " + response.code);
             net.handleResponse(response);
         };
         ws.onerror = function (event) {

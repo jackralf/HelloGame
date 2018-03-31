@@ -354,8 +354,8 @@
     "_scaleY": 0.5,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 2,
-      "y": -266
+      "x": 0,
+      "y": -232
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -433,7 +433,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 220,
-      "height": 274
+      "height": 220
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -560,12 +560,12 @@
     },
     "_enabled": true,
     "id": 0,
-    "MAX_LENGTH": 1000,
+    "MAX_LENGTH": 1200,
     "rotationAngle": -60,
     "rotationDirection": 1,
     "rotationSpeed": 100,
-    "fireSpeed": 700,
-    "pullSpeed": 1000,
+    "fireSpeed": 500,
+    "pullSpeed": 400,
     "state": "IDLE",
     "catch": false
   },
@@ -685,8 +685,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -220,
-      "y": -109
+      "x": -200,
+      "y": -32
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -799,7 +799,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 220,
-      "height": 274
+      "height": 220
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -910,12 +910,12 @@
     },
     "_enabled": true,
     "id": 0,
-    "MAX_LENGTH": 1000,
+    "MAX_LENGTH": 1200,
     "rotationAngle": -60,
     "rotationDirection": 1,
     "rotationSpeed": 100,
-    "fireSpeed": 700,
-    "pullSpeed": 700,
+    "fireSpeed": 500,
+    "pullSpeed": 400,
     "state": "IDLE",
     "catch": false
   },
@@ -1051,8 +1051,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 205,
-      "y": -115
+      "x": 200,
+      "y": -32
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -1336,6 +1336,12 @@
     "t_prefab": {
       "__uuid__": "97514dda-2978-4db1-b204-ed2deade1945"
     },
+    "player1": {
+      "__id__": 10
+    },
+    "player2": {
+      "__id__": 21
+    },
     "hook1": {
       "__id__": 11
     },
@@ -1360,6 +1366,7 @@
     },
     "pos": 0,
     "logicDelta": 0.1,
+    "perLogicDelta": 0.02,
     "ticks": 1,
     "fishArr": [],
     "serverTick": [],
@@ -1370,7 +1377,9 @@
     "nScore2": 0,
     "nTime": 120,
     "sName1": "",
-    "sName2": ""
+    "sName2": "",
+    "sPhoto1": "",
+    "sPhoto2": ""
   },
   {
     "__type__": "cc.AudioSource",

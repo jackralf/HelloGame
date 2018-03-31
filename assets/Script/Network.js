@@ -33,8 +33,8 @@ window.network = {
         };
     },
 
-    login: function(strName) {
-        var params = {code:"login", name:strName};
+    login: function(params) {
+        var params = {code:"login", name:params.name, photo:params.photo};
         this.ws.send(JSON.stringify(params));
     }, 
 

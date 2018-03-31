@@ -8,6 +8,14 @@ cc.Class({
             default:null,
             type:cc.Prefab
         },
+        player1: {
+            default: null,
+            type: cc.Node
+        },
+        player2: {
+            default: null,
+            type: cc.Node
+        },
         hook1: {
             default: null,
             type: cc.Node
@@ -54,6 +62,8 @@ cc.Class({
         nTime:120,
         sName1:"",
         sName2:"",
+        sPhoto1:"",
+        sPhoto2:"",
     },
 
     // use this for initialization
@@ -63,8 +73,8 @@ cc.Class({
 
         var manager = cc.director.getCollisionManager();
         manager.enabled = true;
-        manager.enabledDebugDraw = true;
-        manager.enabledDrawBoundingBox = true;
+        // manager.enabledDebugDraw = true;
+        // manager.enabledDrawBoundingBox = true;
 
         onFire.on("start_scene", this.startGame, this);
         onFire.on("server_tick", this.onServerTick, this);
@@ -125,6 +135,24 @@ cc.Class({
         } else if(this.pos == 2) {
             this.selfHook = this.hook2;
         }
+
+        this.sPhoto1 = params.photo1;
+        this.sPhoto2 = params.photo2;
+        if(this.sPhoto1 != "") {
+            var player1 = this.player1;
+            cc.loader.load(this.sPhoto1, function (err, texture) {
+                var sprite = player1.getComponent(cc.Sprite);
+                sprite.spriteFrame.setTexture(texture);
+            });
+        }
+        if(this.sPhoto2 != "") {
+            var player2 = this.player2;
+            cc.loader.load(this.sPhoto2, function (err, texture) {
+                var sprite = player2.getComponent(cc.Sprite);
+                sprite.spriteFrame.setTexture(texture);
+            });
+        }
+
         var that = this;
         this.schedule(function() {
             that.showTime();

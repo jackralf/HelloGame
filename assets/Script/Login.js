@@ -32,6 +32,13 @@ cc.Class({
     onLoad () {
         network.init();
         onFire.on("login_scene", this.onLoginScene, this);
+        try {
+            if(FBInstant) {
+
+            }
+        } catch (error) {
+            window.FBInstant = null;
+        }
     },
 
     startGame: function(params) {
@@ -48,9 +55,17 @@ cc.Class({
     },
 
     start () {
-        var name = cc.sys.localStorage.getItem("name");
-        if(name != null && name != "") {
-            this.editName.string = name;
+        if(FBInstant) {
+            var playerName = FBInstant.player.getName();
+            if(playerName != null && playerName != "") {
+                this.editName.string = playerName;
+            }
+        }
+        else {
+            var name = cc.sys.localStorage.getItem("name");
+            if(name != null && name != "") {
+                this.editName.string = name;
+            }
         }
         onFire.one("start_game", this.startGame, this);
     },
@@ -64,9 +79,14 @@ cc.Class({
         }
         cc.sys.localStorage.setItem("name", name);
 
+        var photo = "";
+        if(FBInstant) {
+            photo = FBInstant.player.getPhoto();
+        }
         if(network.isConnected()) {
             Toast.showText("正在匹配中...", Toast.LENGTH_MAX);
-            network.login(name);
+            var params = {name:name, photo:photo};
+            network.login(params);
             this.ctime = setTimeout(function() {
                 Toast.showText("请邀请好友一起玩!!!", Toast.LENGTH_LONG);
             }, 6000);

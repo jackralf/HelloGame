@@ -64,6 +64,10 @@ cc.Class({
         sName2:"",
         sPhoto1:"",
         sPhoto2:"",
+        audioClick: {
+            type: cc.AudioSource,
+            default: null
+        },
     },
 
     // use this for initialization
@@ -131,21 +135,25 @@ cc.Class({
         this.score2.string = "0";
         this.pos = params.pos;
         if(this.pos == 1) {
+            this.hook1.getComponent("Hook").isSelf = true;
             this.selfHook = this.hook1;
         } else if(this.pos == 2) {
+            this.hook2.getComponent("Hook").isSelf = true;
             this.selfHook = this.hook2;
         }
 
         this.sPhoto1 = params.photo1;
         this.sPhoto2 = params.photo2;
-        if(this.sPhoto1 != "") {
+        if(this.sPhoto1 != null && this.sPhoto1 != "") {
+            console.log("photo1:" + this.sPhoto1);
             var player1 = this.player1;
             cc.loader.load(this.sPhoto1, function (err, texture) {
                 var sprite = player1.getComponent(cc.Sprite);
                 sprite.spriteFrame.setTexture(texture);
             });
         }
-        if(this.sPhoto2 != "") {
+        if(this.sPhoto2 != null && this.sPhoto2 != "") {
+            console.log("photo2:" + this.sPhoto2);
             var player2 = this.player2;
             cc.loader.load(this.sPhoto2, function (err, texture) {
                 var sprite = player2.getComponent(cc.Sprite);
@@ -272,6 +280,7 @@ cc.Class({
     },
 
     callback: function (event, customEventData) {
+        this.audioClick.play();
         if(this.canFire == false) {
             return;
         }

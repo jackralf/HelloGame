@@ -74,8 +74,10 @@ cc.Class({
             this.node.setPosition(this.node.parent.convertToNodeSpace(worldPos).add(this.delta));
             var hook = this.hookNode.getComponent("Hook");
             if(hook.state == "IDLE") {
-                cc.log("fish add score");
-                network.score(hook.id, this.score);
+                if(hook.isSelf) {
+                    cc.log("fish add score");
+                    network.score(hook.id, this.score);
+                }
                 this.node.destroy();
                 this.stopTick = true;
             }
@@ -88,9 +90,7 @@ cc.Class({
     },
 
     onCollisionEnter: function (other, self) {
-        console.log('on collision enter2');
         var hook = other.getComponent("Hook");
-        console.log("state:" + hook.state);
         if(hook.state == "FIRE" && this.onCatched == false) {
             hook.catch = true;
             hook.state = "PULL";

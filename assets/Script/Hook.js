@@ -29,6 +29,7 @@ cc.Class({
         // },
 
         id:0,
+        isSelf:false,
         MAX_LENGTH:800,
         rotationAngle: -60,
         rotationDirection: 1,

@@ -32,6 +32,18 @@ cc.Class({
             default: null,
             type: cc.Label
         },
+        audioClick: {
+            type: cc.AudioSource,
+            default: null
+        },
+        audioWin: {
+            type: cc.AudioSource,
+            default: null
+        },
+        audioLose: {
+            type: cc.AudioSource,
+            default: null
+        },
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -53,20 +65,24 @@ cc.Class({
             myName = params.name2;
         }
        
-        
         if(score1 >= score2) {
             if(pos == 1) {
                 this.result.string = "WIN";
+                this.audioWin.play();
             } else {
                 this.result.string = "LOSE";
+                this.audioLose.play();
             }
         } else {
             if(pos == 1) {
                 this.result.string = "LOSE";
+                this.audioLose.play();
             } else {
                 this.result.string = "WIN";
+                this.audioWin.play();
             }
         }
+        
 
         var myRankLabel = this.myrank;
         var rank1Label = this.rank1;
@@ -139,6 +155,7 @@ cc.Class({
     },
 
     callback: function (event, customEventData) {
+        this.audioClick.play();
         cc.director.loadScene("login", function() {
             
         });

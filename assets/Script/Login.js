@@ -24,7 +24,12 @@ cc.Class({
             default:null,
             type:cc.EditBox
         },
+        photo:"",
         ctime: null,
+        audioClick: {
+            type: cc.AudioSource,
+            default: null
+        },
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -60,6 +65,7 @@ cc.Class({
             if(playerName != null && playerName != "") {
                 this.editName.string = playerName;
             }
+            this.photo = FBInstant.player.getPhoto();
         }
         else {
             var name = cc.sys.localStorage.getItem("name");
@@ -72,6 +78,7 @@ cc.Class({
 
     callback: function (event, customEventData) {
         console.log("start ...");
+        this.audioClick.play();
         var name = this.editName.string;
         if(name == "") {
             Toast.showText("请输入名字", Toast.LENGTH_LONG);
@@ -79,13 +86,9 @@ cc.Class({
         }
         cc.sys.localStorage.setItem("name", name);
 
-        var photo = "";
-        if(FBInstant) {
-            photo = FBInstant.player.getPhoto();
-        }
         if(network.isConnected()) {
             Toast.showText("正在匹配中...", Toast.LENGTH_MAX);
-            var params = {name:name, photo:photo};
+            var params = {name:name, photo:this.photo};
             network.login(params);
             this.ctime = setTimeout(function() {
                 Toast.showText("请邀请好友一起玩!!!", Toast.LENGTH_LONG);

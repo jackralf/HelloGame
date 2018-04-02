@@ -1,14 +1,14 @@
 {
   "ver": "1.0.0",
-  "uuid": "72d6e486-b149-40e8-bd5e-a91ac28c5870",
+  "uuid": "98eae98e-d061-44e0-9f65-e6a33bfb54f2",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "subMetas": {
-    "西装手1副本": {
+    "table4": {
       "ver": "1.0.3",
-      "uuid": "e76fb267-2676-43ee-8283-73746fed886c",
-      "rawTextureUuid": "72d6e486-b149-40e8-bd5e-a91ac28c5870",
+      "uuid": "7428cda4-890d-4e46-bfe6-36beb52ad4d9",
+      "rawTextureUuid": "98eae98e-d061-44e0-9f65-e6a33bfb54f2",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -16,10 +16,10 @@
       "offsetY": 0,
       "trimX": 0,
       "trimY": 0,
-      "width": 97,
-      "height": 299,
-      "rawWidth": 97,
-      "rawHeight": 299,
+      "width": 1386,
+      "height": 640,
+      "rawWidth": 1386,
+      "rawHeight": 640,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,

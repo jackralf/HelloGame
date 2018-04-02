@@ -1,14 +1,14 @@
 {
   "ver": "1.0.0",
-  "uuid": "05978511-1370-4973-ae47-7ea7308ca09a",
+  "uuid": "af5bce4b-b643-40e1-ba0f-61329926f0b1",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "subMetas": {
-    "西装手2副本": {
+    "龙抓手4": {
       "ver": "1.0.3",
-      "uuid": "4a9d433d-312c-466c-b5ae-e7016769e79b",
-      "rawTextureUuid": "05978511-1370-4973-ae47-7ea7308ca09a",
+      "uuid": "efe810eb-75af-44b4-9201-d4cfc870fd91",
+      "rawTextureUuid": "af5bce4b-b643-40e1-ba0f-61329926f0b1",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -16,10 +16,10 @@
       "offsetY": 0,
       "trimX": 0,
       "trimY": 0,
-      "width": 97,
-      "height": 299,
-      "rawWidth": 97,
-      "rawHeight": 299,
+      "width": 157,
+      "height": 157,
+      "rawWidth": 157,
+      "rawHeight": 157,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,

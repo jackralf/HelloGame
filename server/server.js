@@ -16,7 +16,7 @@ function Room(player1, player2) {
     this.op = [],
     this.ready = 0,
     this.reply = function() {
-        var response = {code:"login", status:"success", name1:player1.msg.name, name2:player2.msg.name, photo1:player1.msg.photo1, photo2:player2.msg.photo};
+        var response = {code:"login", status:"success", name1:player1.msg.name, name2:player2.msg.name, photo1:player1.msg.photo, photo2:player2.msg.photo};
         response.pos = 1;
         player1.ws.send(JSON.stringify(response));
         response.pos = 2;

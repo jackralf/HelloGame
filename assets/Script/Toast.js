@@ -139,6 +139,6 @@ Toast.makeText = function (text, duration) {
 
 Toast.showText = function (text, duration) {
     var toast = Toast.makeText(text, duration);
-    toast.setGravity(Toast.CENTER, 0, 150);
+    toast.setGravity(Toast.TOP, 0, 0);
     toast.show();
 }

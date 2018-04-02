@@ -34,8 +34,9 @@ window.network = {
     },
 
     login: function(params) {
-        var params = {code:"login", name:params.name, photo:params.photo};
-        this.ws.send(JSON.stringify(params));
+        console.log("login params name:" + params.name + " photo:" + params.photo);
+        var params1 = {code:"login", name:params.name, photo:params.photo};
+        this.ws.send(JSON.stringify(params1));
     }, 
 
     fire: function(pos, rotation) {

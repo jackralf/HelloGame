@@ -42,6 +42,7 @@ cc.Class({
 
             }
         } catch (error) {
+            console.log("FBInstant is null");
             window.FBInstant = null;
         }
     },
@@ -61,11 +62,13 @@ cc.Class({
 
     start () {
         if(FBInstant) {
+            console.log("FBInstant is enable");
             var playerName = FBInstant.player.getName();
             if(playerName != null && playerName != "") {
                 this.editName.string = playerName;
             }
             this.photo = FBInstant.player.getPhoto();
+            console.log("FBInstant photo:" + this.photo);
         }
         else {
             var name = cc.sys.localStorage.getItem("name");

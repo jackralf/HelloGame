@@ -1,14 +1,14 @@
 {
   "ver": "1.0.0",
-  "uuid": "af5bce4b-b643-40e1-ba0f-61329926f0b1",
+  "uuid": "8c55f28d-eae5-42e9-b060-04a2336ece6e",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "subMetas": {
-    "龙抓手4": {
+    "title_2": {
       "ver": "1.0.3",
-      "uuid": "efe810eb-75af-44b4-9201-d4cfc870fd91",
-      "rawTextureUuid": "af5bce4b-b643-40e1-ba0f-61329926f0b1",
+      "uuid": "58e80270-e90a-472b-8578-1d4d445ba285",
+      "rawTextureUuid": "8c55f28d-eae5-42e9-b060-04a2336ece6e",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -16,10 +16,10 @@
       "offsetY": 0,
       "trimX": 0,
       "trimY": 0,
-      "width": 157,
-      "height": 157,
-      "rawWidth": 157,
-      "rawHeight": 157,
+      "width": 138,
+      "height": 210,
+      "rawWidth": 138,
+      "rawHeight": 210,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,

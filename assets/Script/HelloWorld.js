@@ -59,7 +59,7 @@ cc.Class({
         canFire: false,
         nScore1:0,
         nScore2:0,
-        nTime:120,
+        nTime:60,
         sName1:"",
         sName2:"",
         sPhoto1:"",
@@ -126,7 +126,7 @@ cc.Class({
     },
 
     startGame: function(params) {
-        this.nTime = 120;
+        this.nTime = 60;
         this.sName1 = params.name1;
         this.sName2 = params.name2;
         this.name1.string = params.name1;

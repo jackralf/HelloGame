@@ -12,7 +12,7 @@ window.fishes = [
 	{id:11, type:11, score:110, direction:-1, rotation:0, speed:150, x:-200, y:70},
 	{id:12, type:12, score:120, direction:1, rotation:0, speed:80, x:200, y:160},
 	{id:13, type:13, score:130, direction:-1, rotation:0, speed:200, x:-150, y:190},
-	{id:14, type:14, score:200, direction:1, rotation:0, speed:200, x:150, y:200},
-	{id:15, type:15, score:300, direction:-1, rotation:0, speed:200, x:0, y:200},
+	{id:14, type:14, score:140, direction:1, rotation:0, speed:200, x:150, y:200},
+	{id:15, type:15, score:160, direction:-1, rotation:0, speed:200, x:0, y:200},
 	
 ];

@@ -237,12 +237,13 @@ cc.Class({
             }
             this.ticks += 1;
             this.perTickCount = 0;
+            this.canFire = true;
             return;      
         }
         
         if(this.serverTick[this.ticks] != null)
         {
-            this.canFire = true;
+            
             if(this.perTickCount < this.MAX_TICK_COUNT) {
                 this.tick(this.perLogicDelta);
                 this.perTickCount += 1;
@@ -282,6 +283,7 @@ cc.Class({
     callback: function (event, customEventData) {
         this.audioClick.play();
         if(this.canFire == false) {
+            console.log("can fire = false");
             return;
         }
         var hook = this.selfHook.getComponent("Hook");

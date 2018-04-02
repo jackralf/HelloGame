@@ -54,6 +54,8 @@ cc.Class({
         if(this.state == "IDLE") {
             this.catch = false;
             this.state = "FIRE";
+        } else {
+            console.log("state not idle.....");
         }
     },
 

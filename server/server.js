@@ -37,18 +37,18 @@ function heartbeat() {
 const interval = setInterval(function ping() {
     wss.clients.forEach(function each(ws) {
         if (ws.isAlive === false) {
-            closeRoom(ws);
             return ws.terminate();
         }
 
         ws.isAlive = false;
         ws.ping(noop);
     });
-}, 30000);
+    closeEmptyRoom();
+}, 5000);
 
-function closeRoom(ws) {
+function closeEmptyRoom() {
     for(var tmp of waitPlayers) {
-        if(tmp.ws == ws) {
+        if(tmp.ws.readyState !== WebSocket.OPEN) {
             waitPlayers.delete(tmp);
         }
     }
@@ -128,6 +128,13 @@ function handleMessage(msg, ws) {
 
 function makePair(curPlayer) {
     log.debug("waitting player size: %d", waitPlayers.size);
+    for(var tmp of waitPlayers) {
+        if(tmp.ws == curPlayer.ws) {
+            log.debug("delete the same waitting player: %s", tmp.msg.name);
+            waitPlayers.delete(tmp);
+        }
+    }
+
     var player = null;
     for(var tmp of waitPlayers) {
         if(tmp.ws.readyState === WebSocket.OPEN && tmp.ws != curPlayer.ws) {
